@@ -1,4 +1,4 @@
-let markers, map;
+const mark, map;
 
 function initMap() {
   const posicion = {
@@ -11,34 +11,36 @@ function initMap() {
     center: posicion,
   });
 
-  markers.push(
-    new google.maps.Marker({
+  mark.push(
+    new google.maps.Mark({
       position: {
-        lat: 43.288773445332524,
-        lng: -2.163845628766325,
+        lat: -36.8404,
+        lng: 174.74,
       },
       map,
-      title: "Zarautz",
+      title: "Auckland",
     })
   );
-  markers.push(
-    new google.maps.Marker({
+  
+  mark.push(
+    new google.maps.Mark({
       position: {
-        lat: 36.164983935422484,
-        lng: -86.78260332112534,
+        lat: 51.05011,
+        lng: -114.08529,
       },
       map,
-      title: "Nashville",
+      title: "Calgary",
     })
   );
-  markers.push(
-    new google.maps.Marker({
+  
+  mark.push(
+    new google.maps.Mark({
       position: {
-        lat: 36.242150706885596,
-        lng: -6.0775131009957715,
+        lat: 43.70011,
+        lng: -79.4163,
       },
       map,
-      title: "El Palmar",
+      title: "Toronto",
     })
   );
 }
